@@ -200,6 +200,11 @@ footer a {
 }
 
 @media (min-width: 576px) {
+  body {
+    width: 80%;
+    margin: 0 auto;
+  }
+
   header nav ul {
     margin: 0;
     padding: 0;
@@ -245,46 +250,77 @@ footer a {
 }
 
 @media (min-width: 1200px) {
-  header nav ul {
-    margin: 0;
-    padding: 0;
-    text-align: center; /* Opzionale: centra il menu */
+  header {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  header nav li {
+  header div {
+    display: flex;
+    align-items: center;
+  }
+
+  header div p {
+    color: white;
+    margin-left: 15px;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  nav ul {
     list-style: none;
-    display: inline-block; /* Dispone gli elementi in orizzontale */
-    margin-right: 20px; /* Aggiunge spazio tra gli elementi */
+    display: flex;
+    gap: 20px;
   }
 
-  header nav li:last-child {
-    margin-right: 0; /* Rimuove il margine dall'ultimo elemento */
+  nav ul li {
+    display: inline;
   }
 
-  header nav li a {
+  nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 1.5rem;
   }
 
-  header nav li a:hover {
-    color: red;
+  nav ul li a:hover {
+    color: #f39c12;
   }
 
-  header nav li a::before {
-    content: "\22c6\0020";
+  article li {
+    margin-top: 10px;
   }
 
-  h1 {
-    font-size: 5rem;
+  article h2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+  }
+  p {
+    font-size: 1.4rem;
   }
 
   table {
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    width: 60%;
   }
 
-  #user_email {
-    width: 70%;
+  iframe {
+    width: 45%;
+    display: inline-block;
+  }
+
+  section {
+    width: 45%;
+    display: inline-block;
+    margin-left: 30px;
+  }
+  aside {
+    text-align: center;
+  }
+  aside div {
+    margin: 0 auto;
+    width: 30%;
+    display: inline-block;
   }
 }
