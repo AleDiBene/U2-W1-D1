@@ -243,3 +243,48 @@ footer a {
     width: 70%;
   }
 }
+
+@media (min-width: 1200px) {
+  header nav ul {
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Opzionale: centra il menu */
+  }
+
+  header nav li {
+    list-style: none;
+    display: inline-block; /* Dispone gli elementi in orizzontale */
+    margin-right: 20px; /* Aggiunge spazio tra gli elementi */
+  }
+
+  header nav li:last-child {
+    margin-right: 0; /* Rimuove il margine dall'ultimo elemento */
+  }
+
+  header nav li a {
+    color: white;
+    text-decoration: none;
+  }
+
+  header nav li a:hover {
+    color: red;
+  }
+
+  header nav li a::before {
+    content: "\22c6\0020";
+  }
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  table {
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  #user_email {
+    width: 70%;
+  }
+}
